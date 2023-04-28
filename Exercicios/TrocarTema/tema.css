@@ -1,0 +1,37 @@
+
+body[data-theme="t-light"]{
+    --color-bg: white;
+    --color-text: black;
+  }
+
+  body[data-theme="t-dark"]{
+    --color-bg: black;
+    --color-text: white;
+  }
+
+  html, body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    text-align: center;
+  }
+
+  h1{
+    font-size: 50px;
+  }
+
+  p{
+    font-size: 35px;
+  }
+
+  #caixaPai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #caixaFilha{
+    width: 500px;
+    height: 500px;
+    background-color: var(--color-text);
+    margin-bottom: 30px;
+  }
