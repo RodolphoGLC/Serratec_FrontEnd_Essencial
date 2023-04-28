@@ -1,0 +1,15 @@
+/* O que é um seletor css, e como chamar a classe e id */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    border: 100px, solid, red;
+}
+
+

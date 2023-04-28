@@ -1,0 +1,41 @@
+Fazer a trilha do Rocktseat desenvolvedor
+Ver os instagrans com Sheats Cheats (folhas de dicas)
+Entrar no canal dela para conseguir mais dicas
+
+Unidades de medidas
+    px: pixel
+    rem: fonte configurada para o body
+    em: relacionado ao elemento do pai
+    vw: view port width
+    vh: view port hight
+
+Cores - https://imagecolorpicker.com
+    rgb
+    hsl
+
+Css funciona como cascata
+    Ou seja, elemento tem menos peso que uma classe que tem menos peso que um id
+
+Border box
+    Garante 
+
+Atalhos
+    Ctrl + Shift + L
+    Ctrl + p - Navegar entre arquivos
+
+Aprendemos
+    Box Size
+    Elementos semanticos
+    Config basica
+        /* Definição de variaveis de cores */
+        :root{
+            --principal: blue;
+            --secundaria: green;
+        }
+
+        /* Resetar as configs do Chrome */
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }

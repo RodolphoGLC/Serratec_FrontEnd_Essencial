@@ -1,0 +1,20 @@
+/* Manipula os elementos da página */
+
+/* Manipula o h1 da página html */
+
+h1{
+    color: brown;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h1{
+    color: blue;
+}
+
+button{
+    padding: 5px; 
+    border-radius: 5px;
+}

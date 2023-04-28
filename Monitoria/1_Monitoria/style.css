@@ -1,0 +1,11 @@
+/* O que é um seletor css, e como chamar a classe e id */
+
+/* ID */
+#primeira-div{
+    border: 10px, solid, red;
+}
+
+/* Class */
+.segunda-div{
+    border: 10px, solid, red;
+}

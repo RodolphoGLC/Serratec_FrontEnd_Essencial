@@ -1,0 +1,11 @@
+/* Manipula os elementos da página */
+
+/* Manipula o h1 da página html */
+h1{
+    color:red;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}

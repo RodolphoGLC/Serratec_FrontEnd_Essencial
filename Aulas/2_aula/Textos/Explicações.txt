@@ -1,0 +1,168 @@
+HTML e CSS - linguagem de marcação
+    HTML é o que se vé na página
+    CSS é o que estilisa o HTML
+
+HTML - é uma linguagem de marcação
+    Hypertext Markup Language
+    Para comentar <!-- -->
+        OBJ: entender o código posteriormente
+        São acessiveis atravez do código fonte(!!!!!!CUIDADO!!!!!!)
+            Ctrl + u - Abre o código fonte
+    Aspas - valor de texto
+        ' ' e " " - usadas quando necessario
+        Omissas - !!!!!é possivel usa-las, mas não use!!!!!!
+            Por padrão use as aspas duplas ("")
+
+CSS - a estilização tem regras
+    A hierarquia existe para evitar erros
+        Cada uma tem uma força
+    No geral funciona como cascata, ou seja, o que vier depois sobreescreve o que veio antes
+
+JavaScript - Manipula a DOOM
+    Faz com que os elementos sejam alterados, adicionados, manipulados de forma dinâmica
+    Linha de comando é uma ação imediata
+        Vc pode pegar elementos usando document.getElementById();
+        Com isso vc pode manipula-lo usando o JavaScript
+    Não podemos manipular o JavaScript das páginas WEB
+        Para aumentar a segurança das páginas
+
+Usando o F12 (Console WEB) nós podemos manipular os sites da WEB
+    VC não altera o site, mas sim o HTML é customizavél a nivel usuário (não irá salvar)
+    No F12 nós temos acesso a como a pagína foi feita e a estilização
+    Podemos tirar o CSS, JavaScript e o HTML das paginas 
+
+Estrutura do HTML
+<html></html>
+<head></head> - Cabeça, onde irão as configurações e estilizações da página
+<body></body> - Corpo, onde irá o texto da página
+
+Exemplos de tags - algumas já vem com configurações(podem ser sobreescritas)
+    Tags tem inicio e fim (precisam ser fechadas)
+        h1 - Titulo, vai de 1 a 6
+        p - Paragrafo
+        div - elemento genérico que vem com display-block
+        span - elemento genérico
+        img - Para inserir uma imagem <img src:"link" /> (não precisa fechar pois não terá texto)
+        a - ancora, Fala para onde o link vai
+        label - rotula elementos : atributo for apontando para algum id (pode estar no input)
+        input - entrada de dados
+
+Atributos
+    Os elementos html possuem Atributos 
+        Servem como informações extras ou para executar uma função específica
+            IMG - img sem alt é uma perda de pontos no projeto final
+                src: (Source/Fonte) - fonte para algum arquivo
+                alt: (Texto alternativo) - para caso a 1° fonte não carregue
+            INPUT
+                type: Tipo de imput - EX: texto, password
+                    disabled: desabilita um parametro anterior (true ou false)
+                    hidden: esconde elementos na tela (true ou false)
+
+Atributos globais - podem ser usados em qualquer tags
+    class - define uma classe que pode ser usada em outras tags (.)
+    id - identificador único para aquela tag (#)
+    hidden - esconder a tag, não sai da DOM
+    style - estilizar aquela tag em especifico (melhor usar o CSS)
+    title - mensagem para fascilitar o usuário
+    contenteditable - torna conteudos editaveis (como se fosse um input), não altera código
+    tabindex - ordem de incerção do tabindex
+    ... Mais no link dos slides
+
+Aninhamento hierarquico
+    Podemos aninhar tags dentro de outras : div > p > strong
+    <div>
+        <p>Olá <strong>Rodolpho</strong>, tudo bem</p>
+    </div>
+
+Estruturação do HTML
+    Doctype - Faz com que alguns navegadores entendam que estamos usando html5
+    html - inicio da cadeia de elementos
+    head - configurações do site e estilização
+    body - corpo do site
+        header - cabeçalho do corpo
+        footer - rodape do corpo
+
+Listas 
+    Cada item será um <li></li>
+    Para organizar a lista temos:
+        Odenadas - colocará uma numeração antes dos itens
+            <ol></ol>
+        Não ordenadas - colocará uma bolinha antes dos itens
+            <ul></ul>
+
+Citações
+    blockquote
+        cite
+
+Links 
+    <a href="link" target="blank">Titulo</a>
+        Abre o link em outra aba ao clicar no Titulo
+
+Tabelas
+    table -Inicio da tabela
+    caption - Titulo da tabela
+    thead - Titulo da coluna
+    tbody - Corpo da tabela
+    tr - Linha da tabela
+    td - Dados da tabela
+
+    <table>
+        <caption>Pessoas por idade</caption>
+        <thead>
+            <th>Nome</th>
+            <th>Idade</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Rodolpho</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+CSS - Cascading Style Sheet
+    Css é a beleza e HTML é a estrututra
+    CodePen.io - uma ferramenta
+
+Estrutura do CSS
+    Seletores{
+        propriedades: valor da propriedade;
+    }
+
+Seletores
+    Conecta HTML com CSS
+        Global - *{}
+        Id - #id{}
+        Classe - .classe{}
+    Tem uma hierarquia
+
+Formas de importar fotes
+
+Css cascata
+    Interpretação em cascata
+        Se fizer o mesmo elemento 2 vezes irá somar
+
+Hierarquia de força 
+    Inline > Tag Style > Link
+
+Regra Important
+    !important;
+        Colocado no CSS para deixar ela mais importante que as outras atribuidas as outras antes
+
+At Rule (@)
+    @import - Importa algo
+    @midia - Para alterar a tela p/ tamanhos de tela
+    @front-faces - Fontes externas
+    @keyframes - Animações (coloque no projeto final p/ impressionar)
+    
+CSS para sobreescrever a do body - mexendo na margin
+    body{
+        margin = 0;
+    }
+
+
+CSS - 
+    Color 
+        RGB - Espectro de cores, sem opacidade
+        RGBA - Espectro de cores, com opacidade
+        HBL - Pela claridade
