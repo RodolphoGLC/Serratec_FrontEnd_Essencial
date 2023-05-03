@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/login.css" />
     <link
       rel="stylesheet"
@@ -19,10 +20,22 @@
             <img src="../assets/logoMarca.png" alt="Logo da Loja" />
           </div>
           <div id="carrinhoTitle">
-            <img src="../assets/carrinho.png" alt="Carrinho de Compras">
+            <a href="../html/carrinho.html"
+              ><img src="../assets/carrinho.png" alt="Carrinho de Compras"
+            /></a>
           </div>
         </div>
-        <div id="links"></div>
+        <div id="links">
+          <div class="linksCentrais">
+            <a href="../html/home.html">Home</a>
+            <a href="../html/shop.html">Shop</a>
+            <a href="../html/aboutUs.html">About us</a>
+            <a href="../html/contactUs.html">Contact</a>
+          </div>
+          <div class="linkLateral">
+            <a href="../html/login.html">Login</a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -33,17 +46,17 @@
           <input type="email" id="user" required="required" />
           <label for="password">Senha</label>
           <div class="divSenha">
-            <input type="password" id="visSenha" required="required" />
+            <input type="password" id="senha" required="required" />
             <button
               class="botaoVS btn-default"
               type="button"
               onclick="olharSenha()"
             ></button>
           </div>
-          <a id="esqueci">Esqueci minha senha</a>
-          <button class="btn" onclick="logarText()">Logar</button>
+          <a href="../html/esquecerSenha.html" id="esqueci">Esqueci minha senha</a>
+          <button class="btn" onclick="logar()">Logar</button>
           <p>Clique abaixo para registar-se?</p>
-          <a href="./html/registro.html">Registrar</a>
+          <a href="../html/cadastro.html">Registrar</a>
         </div>
       </div>
       <script src="../js/login.js"></script>

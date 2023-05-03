@@ -15,44 +15,6 @@ body {
     color: var(--preto)
 }
 
-/* Header */
-
-div #headerContainer{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-div #title{
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-div #imgTitle{
-    position: absolute;
-    top:0;
-    left: calc(50% - 100px);
-}
-
-#imgTitle img{
-    width: 200px;
-    height: 100px;
-}
-
-div #carrinhoTitle{
-    position: absolute;
-    top: calc(50% + 20px);
-    left: calc(95%);
-    background-color: white;
-}
-
-#carrinhoTitle img{
-    width: 50px;
-    height: 50;
-}
-
 /* Main */
 
 .pageLogin {
@@ -129,7 +91,7 @@ a:hover {
     gap: 20px;
 }
 
-#visSenha {
+#senha {
     width: 90vw;
     margin-bottom: 5px;
 }

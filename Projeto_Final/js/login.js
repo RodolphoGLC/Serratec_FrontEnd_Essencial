@@ -1,18 +1,18 @@
 let usuarios = [
     {
-      "login": "marina",
-      "senha": "123"
+        "login": "12345678@gmail.com",
+        "senha": "MTIzNDU2Nzg="
     },
     {
-      "login": "rod",
-      "senha": "123"
+        "login": "G4121212@gmail.com",
+        "senha": "RzQxMjEyMTI="
     }
-  ]
+]
 
 // Função do olho (visualizar a senha)
 
 function olharSenha() {
-    var typePassword = document.getElementById("visSenha")
+    var typePassword = document.getElementById("senha")
     var verificar = typePassword.getAttribute("type");
 
     if (verificar == "password") {
@@ -26,38 +26,24 @@ function olharSenha() {
 
 //Função para Login
 
-function logarText() {
-    leitura();
-    var getUsuario = document.getElementById("user");
-    var getSenha = document.getElementById("visSenha");
+function logar() {
+    var getUsuario = document.getElementById("user").value;
+    var getSenha = document.getElementById("senha").value;
 
-    let indexUsuario = 0;
-    for (let i = 0; i < arrayUsuarios.lenght; i++) {
-        if (arrayUsuarios[i] == getUsuario.value) {
-            indexUsuario = i;
-        }
+    var index = usuarios.findIndex(function (usuarios, i) {
+        return usuarios.login === getUsuario;
+    })
+
+    //Verificar se o login e senha batem
+    if (index === -1) {
+        alert("Usuário inexistente")
     }
-
-    if (getUsuario.value == arrayUsuarios[indexUsuario] && getSenha.value == arrayUsuarios[indexUsuario + 1]) {
-        alert("Logado");
-        //Fazer trocar de cor da div
+    else if (usuarios[index].login === getUsuario && usuarios[index].senha === window.btoa(getSenha)) {
+        alert("Logado")
+        window.location("../html/inicial.html");
     }
     else {
-        alert("Tente novamente");
-    }
-}
-
-// Login lendo em um arquivo txt
-
-function leitura() {
-    var arrayUsuarios = [];
-    let reader = new FileReader();
-    var linha = "";
-    let path = 'login.txt';
-
-    linha = reader.read(path);
-    if (linha != null) {
-        arrayUsuarios = linha.split("," || "\r\n");
+        alert("Senha incorreta")
     }
 }
 
