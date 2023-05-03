@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body, html{
+    margin: 0;
+    max-height: 100%;
+    background-color: rgb(230, 182, 182);
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titulo da pagina */
+
+#pageTitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(54, 53, 53);
+}
+
+/* Area do input */
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+#searchForm input{
+    width: 350px;
+    height: 60px;
+    border-radius: 10px 0 0 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(135, 90, 6);
+    border-radius: none;
+}
+
+#searchForm button{
+    width: 70px;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid rgb(135, 90, 6);
+    background-color: rgb(231, 155, 14);
+    transition: 0.4s;
+}
+
+#searchForm button:hover{
+    filter: brightness(0.9);
+}
+
+/* People Container */
+
+#peopleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Person Container */
+
+.personContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 10px 25px;
+    white-space: nowrap;
+    min-width: 400px;
+    border: 1px solid rgb(135, 90, 6);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.personContainer img{
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+
+.contentConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contentConteiner .title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contentConteiner .job{
+    font-size: 18px;
+}

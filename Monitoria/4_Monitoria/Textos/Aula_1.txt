@@ -1,0 +1,31 @@
+// HTML é um esqueleto composto de várias caixas
+// O que é um seletor css, ele pode ser chamado pelo nome da TAG HTML,
+// pela classe usando . ou pelo id usando #
+
+//<link rel="stylesheet" href="style.css">
+
+//Aprendemos como debugar css usando border
+
+//<title>Monitoria 1</title> - o titulo da minha aba
+
+// h1 até h6 que se referem a titulos da minha pagina
+// p é um paragrafo
+
+//! o emmet vai montar o corpo html pra mim
+//Conhecemos uma das tags html que representa uma caixa generica que é div
+
+//Aprendemos que tags html tem estilos css padrão, e caso estejamos tendo
+//algum problema com estilo devemos então sobreescrever esses estilos
+
+//Conhecemos por alto o nvm, que é um gerenciador de pacotes node
+//permitindo você escolher qual versão do node usar
+
+//Aprendemos que o node é responsável pela emulação do codigo javascript
+//fora de um navegador, como por exemplo o console, e mais pra frente
+//veremos como rodar um codigo javascript no console
+
+//Conhecemos a extensão live server e como ela era uma facilitadora
+//para atualizar a edição do arquivo em tempo real, conforme salvamos
+//o arquivo no vs code.
+
+//Conhecemos as extensões Auto Close Tag e Auto Rename Tag que facilitam na manutenção do codigo html

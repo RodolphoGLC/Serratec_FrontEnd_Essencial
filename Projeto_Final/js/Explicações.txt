@@ -1,0 +1,30 @@
+--> Criptografia
+
+let text = "Hello World!";
+let encoded = window.btoa(text);
+let decoded = window.atob(encoded);
+
+--> Como fazer
+
+Colocar no Mock o criptografado (btoa)
+Percorra a lista
+Busque pela entrada (criptografada) e encontre ela
+
+--> lista
+
+Adicionar nela
+    Final da lista
+        produto.push({
+            "login": "marina",
+            "senha": "123"
+        })
+
+Remover dela
+    Ultimo elemento
+        produto.pop();
+
+Alterar item da lista
+    Encontrar o item da lista
+        produto.indexOf((produto) => produto.id === id)
+        produtos.find((produto) => produto.id === id)
+    Alterar

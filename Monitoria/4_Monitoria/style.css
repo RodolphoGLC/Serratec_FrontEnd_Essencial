@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, header, input, textarea{
+    font-size: 1.5rem;
+}
+
+#divPai{
+    display: flex;
+    flex-direction: row; /* Por padrão é row */
+    justify-content: space-evenly; /* main axis */
+    align-items: center; /* cross axis */
+    flex-wrap: wrap; /* Divide os espaços caso não tenha mais espaço na tela, dividindo e colocando o que faltou a baixo */
+    gap: 20px; /* Espaço entre os elementos */
+
+    border: 1px solid blue;
+    height: 100vh; /* Para deixar movermos livremente */
+}
+
+.f1, .f2, .f3{
+    border: 1px solid red;
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f1{
+    flex: 1; /* Tamanho da fração que sobra */
+}
+
+.f2{
+    flex: 2;
+}
+
+.f3{
+    flex: 3;
+}

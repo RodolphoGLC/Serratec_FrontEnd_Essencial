@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="headerContainer">
+        <div id="title">
+          <div id="imgTitle">
+            <img src="../assets/logoMarca.png" alt="Logo da Loja" />
+          </div>
+          <div id="carrinhoTitle">
+            <img src="../assets/carrinho.png" alt="Carrinho de Compras">
+          </div>
+        </div>
+        <div id="links"></div>
+      </div>
+    </header>
+    <main>
+      <div class="pageLogin">
+        <div class="divLogin">
+          <h1>Logar</h1>
+          <label for="email">E-mail</label>
+          <input type="email" id="user" required="required" />
+          <label for="password">Senha</label>
+          <div class="divSenha">
+            <input type="password" id="visSenha" required="required" />
+            <button
+              class="botaoVS btn-default"
+              type="button"
+              onclick="olharSenha()"
+            ></button>
+          </div>
+          <a id="esqueci">Esqueci minha senha</a>
+          <button class="btn" onclick="logarText()">Logar</button>
+          <p>Clique abaixo para registar-se?</p>
+          <a href="./html/registro.html">Registrar</a>
+        </div>
+      </div>
+      <script src="../js/login.js"></script>
+    </main>
+    <footer><!-- Ainda será desenvolvido --></footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+Exercicio do 0
+
+Imput no meio da tela com um botão no canto.
+Em baixo ira aparecer alguns usuários (Coluna)
+    Cada um terá o nome     
+    Profissão
+
+Ideia é filtrar os cards das pessoas p/ buscar o que quer
+    1° filtrar nome
+    2° filtrar os 2

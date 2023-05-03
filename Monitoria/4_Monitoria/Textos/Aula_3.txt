@@ -1,0 +1,144 @@
+Positions CSS
+    Fixed - fixa o que se quer em uma posição
+
+<header>Header</header>
+<main>Main</main>
+
+header{
+    width: 100vw;
+    height: 80px;
+    background:blue;
+    position: fixed;
+}
+
+main{
+    width: 100vw;
+    height: 3000px;
+    background: black;
+    color: white;
+    padding-top: 80px;
+}
+
+Display
+    Div tem display block
+        Display block (em bloco 1 / 2) / = quebra de linha
+    Span não tem display block
+        Display inline (em fila - 1, 2, 3, 4)
+
+<div>1</div>
+<div>2</div>
+
+div{
+    border: 1px solid red;
+    display: block; /*Já é o padrão*/
+    height: 100px;
+    width: 50vw;
+}
+
+Display flex - precisa de 1 pai com display flex
+    1 do lado do outro
+        use o z-index = 1; -> para deixar o header em uma camada acima
+
+<div id="divPai">
+    <div class="f1"></div>
+    <div class="f2"></div>
+    <div class="f3"></div>
+</div>
+
+#divPai{
+    display: flex;
+}
+
+.f1, .f2, .f3{
+    border: 1px solid red;
+    height: 100px;
+    width: 50vw;
+}
+
+    Se usarmos a propriedade flex-direction: column;
+        Mudará de fila para coluna
+
+<div id="divPai">
+    <div class="f1"></div>
+    <div class="f2"></div>
+    <div class="f3"></div>
+</div>
+
+#divPai{
+    display: flex;
+    flex-direction: column; /* Por padrão é row */
+    justify-content: center; /* main axis */
+    align-items: center; /* cross axis */
+
+    border: 1px solid blue;
+    height: 100vh; /* Para deixar movermos livremente */
+}
+
+.f1, .f2, .f3{
+    border: 1px solid red;
+    height: 150px;
+    width: 150px;
+}
+
+Destrinchinda o justify-content
+    space-evenly - Espaço padrão entre eles e o canto (mesmo)
+    space-around - Espaço padrão entre eles e nos cantos diferentes
+    space-between - cola 2 nas pontas e deixa um espaço padrão entre os outros
+        flex-warp = warp; 
+            Evita que diminua os elementos os dividindo
+        gap: 5px; 
+            Espaço entre os elementos
+
+#divPai{
+    display: flex;
+    flex-direction: row; /* Por padrão é row */
+    justify-content: space-evenly; /* main axis */
+    align-items: center; /* cross axis */
+    flex-wrap: wrap; /* Divide os espaços caso não tenha mais espaço na tela, dividindo e colocando o que faltou a baixo */
+    gap: 20px; /* Espaço entre os elementos */
+
+    border: 1px solid blue;
+    height: 100vh; /* Para deixar movermos livremente */
+}
+
+.f1, .f2, .f3{
+    border: 1px solid red;
+    height: 150px;
+    width: 150px;
+}
+
+O flex caso atribuido a um filho
+    Pode atribuir o espaço que resta para um filho em especifico
+    flex: 1; |  flex: 2; |  flex: 3;
+        Divide o que sobra em 6 fatias e divide entre eles
+
+#divPai{
+    display: flex;
+    flex-direction: row; /* Por padrão é row */
+    justify-content: space-evenly; /* main axis */
+    align-items: center; /* cross axis */
+    flex-wrap: wrap; /* Divide os espaços caso não tenha mais espaço na tela, dividindo e colocando o que faltou a baixo */
+    gap: 20px; /* Espaço entre os elementos */
+
+    border: 1px solid blue;
+    height: 100vh; /* Para deixar movermos livremente */
+}
+
+.f1, .f2, .f3{
+    border: 1px solid red;
+    height: 150px;
+    width: 150px;
+}
+
+.f1{
+    flex: 1; /* Tamanho da fração que sobra */
+}
+
+.f2{
+    flex: 2;
+}
+
+.f3{
+    flex: 3;
+}
+

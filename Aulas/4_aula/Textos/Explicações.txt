@@ -1,0 +1,40 @@
+JavaScript
+
+Um carro é um objeto
+    Um carro tem portas, cor, rodas
+        Se trocar a porta não deixa de ser um carro, mas pode mudar o modelo
+
+Na DOM podemos acessar as informações dos objetos, podemos
+    Alterar elementos HTML
+    Alterar atributos
+    Alterar estilos
+    Remover elementos
+    Adicionar elementos
+    Reagir a eventos HTML
+    Criar novos eventos 
+
+O OBJETO HTLM DOM document é o proprietariio de todos os outros objetos em sua página WEB
+
+Métodos 
+    Açoes que vc executa em elementos
+    Propriedades HTML DOM são valores que vc define e Alterar, alguns exemplos
+        document.getElementById(id)
+        element.setAtribute(attribute, value)
+            document.getElementById("botton-left").setAttribute("style", "background-color: purple")
+            document.getElementById("center").setAttribute("style", "border-radius: 50%")
+        document.createElemente(elemento).Parametro
+            const titulo = document.createElement("h1")
+            document.getElementById("center").appendChild(titulo)
+        document.getElementById().onclick = função(){}
+
+Quando subimos o codigo temos que esconder o codigo JavaScript
+    js obfuscator
+        Esconderá o código que estará na página
+    Alguns frameworks já escondem o o js
+    Ou então não suba o código fonte quando docker o codigo
+        Buscar o código
+
+Caracteristica das linguagens
+    Linguagem interpretadas, não dependem de compilação para serem executadas
+
+
