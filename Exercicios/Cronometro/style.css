@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(221, 221, 221);
+    height: 100vh;
+}
+
+.container h1 {
+    color: rgb(13, 13, 118);
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-weight: bold;
+    color: rgb(17, 16, 16);
+    background-color: rgb(196, 194, 194);
+    border-radius: 30px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: rgb(13, 13, 118);
+    min-width: 90px;
+}
+
+.separator{
+    padding-right: 10px;
+    color: rgb(2, 2, 48);
+}
+
+#milliseconds {
+    font-size: 30px;
+    color:rgb(110, 110, 110)
+}
+
+.buttons {
+    display: flex;
+    
+}
+
+/* Mudar para ficar no estili do professor */
+
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(177, 177, 177);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#startBtn {
+    background-color: rgb(18, 18, 169);
+    color: rgb(191, 190, 190);
+}
+
+#startBtn, #pauseBtn, #resumeBtn {
+    border-radius: 30px 0 0 30px;
+}
+
+#resetBtn{
+    border-radius: 0 30px 30px 0;
+}
+
+#pauseBtn, #resumeBtn {
+    display: none;
+}
