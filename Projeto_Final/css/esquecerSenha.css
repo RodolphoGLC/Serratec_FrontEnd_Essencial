@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap%27');
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
+:root{
     --branco: #eaeff1;
     --roxo: #451f4e;
     --violeta: #73256b;
@@ -15,17 +15,17 @@
     --preto: black;
 }
 
-.navbar-brand {
+.navbar-brand{
     font-size: 3rem;
     font-weight: bold;
     color: red;
 }
 
-.offcanvas-body {
+.offcanvas-body{
     font-size: 20px;
 }
 
-a .nav-item {
+a .nav-item{
     font-weight: bold;
 }
 
@@ -34,15 +34,13 @@ body {
     margin-top: 90px;
 }
 
-/* Main */
-
-.pageLogin {
+.pageForgotPassword {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url("../assets/background.jpg");
     background-repeat: no-repeat;
@@ -50,11 +48,11 @@ body {
     background-position: center;
 }
 
-.divLogin {
+.container {
     display: flex;
     flex-direction: column;
     background-color: var(--branco);
-    width: 25em;
+    width: 25rem;
     border-radius: 7px;
     padding: 30px;
     padding-bottom: 10px;
@@ -73,14 +71,13 @@ input {
     padding: 15px;
     font-size: 1.3em;
     border: 1px solid var(--violeta);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 5px;
     border-radius: 4px;
-    transition: all linear 160ms;
     outline: none;
 }
 
-.divLogin input:focus {
+.container input:focus {
     border: 1px solid var(--roxo);
 }
 
@@ -96,7 +93,6 @@ a {
     font-size: 1.2em;
     color: var(--preto);
     cursor: pointer;
-    transition: all linear 160ms;
 }
 
 a:hover {
@@ -104,26 +100,15 @@ a:hover {
 }
 
 .divSenha {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    /* gap: 10px; */
 }
 
-.botaoVS {
-    position: absolute;
-    left: 85%;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 23px !important;
-    width: 23px !important;
-    background-image: url("../assets/olho.png");
-    opacity: 0.4;
-
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-#esqueci {
-    margin-top: 15px;
+.novaSenha {
+    margin-bottom: 5px;
 }
 
 .btn {
@@ -131,8 +116,8 @@ a:hover {
     color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
-    transition: all linear 160ms;
-    cursor: pointer;
+    transition: all linear 16ms;
+    cursor: pointer; 
     padding: 15px;
     border: 1px solid var(--violeta);
     margin-bottom: 10px;
@@ -144,12 +129,4 @@ a:hover {
 .btn:hover {
     transform: scale(1.05);
     background-color: var(--roxo);
-}
-
-.divLogin p {
-    display: flex;
-    justify-content: center;
-    font-size: 1.3rem;
-    color: var(--preto);
-    margin: 20px 0 10px 0;
 }

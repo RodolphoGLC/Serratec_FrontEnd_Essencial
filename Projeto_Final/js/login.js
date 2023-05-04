@@ -1,18 +1,7 @@
-let usuarios = [
-    {
-        "login": "12345678@gmail.com",
-        "senha": "MTIzNDU2Nzg="
-    },
-    {
-        "login": "G4121212@gmail.com",
-        "senha": "RzQxMjEyMTI="
-    }
-]
-
 // Função do olho (visualizar a senha)
 
 function olharSenha() {
-    var typePassword = document.getElementById("senha")
+    var typePassword = document.getElementById("senha");
     var verificar = typePassword.getAttribute("type");
 
     if (verificar == "password") {
@@ -22,30 +11,48 @@ function olharSenha() {
     }
 }
 
-//Função Esquecer Senha - não sei se será implementado
+//Logar Local Storage
 
-//Função para Login
+const getUsuario = document.getElementById("user");
+const getSenha = document.getElementById("senha");
 
-function logar() {
-    var getUsuario = document.getElementById("user").value;
-    var getSenha = document.getElementById("senha").value;
+function loginLocalStorage() {
+    var confirmacao = localStorage.getItem(getUsuario.value);
 
-    var index = usuarios.findIndex(function (usuarios, i) {
-        return usuarios.login === getUsuario;
-    })
-
-    //Verificar se o login e senha batem
-    if (index === -1) {
-        alert("Usuário inexistente")
+    if (confirmacao != null) {
+        if (confirmacao === window.btoa(getSenha.value)) {
+            alert("Logado")
+        }
     }
-    else if (usuarios[index].login === getUsuario && usuarios[index].senha === window.btoa(getSenha)) {
-        alert("Logado")
-        window.location("../html/inicial.html");
+    else if (confirmacao === null) {
+        alert("Usuário não encontrado")
     }
     else {
         alert("Senha incorreta")
     }
 }
+
+const getNewP1 = document.getElementById("newPs1")
+const getNewP2 = document.getElementById("newPs2")
+
+//Redefinir senha
+
+function changePassword() {
+    var confirmacao = localStorage.getItem(getUsuario.value);
+
+    if (confirmacao != null && getNewP1.value === getNewP2.value) {
+        localStorage.setItem(getUsuario.value, window.btoa(getNewP2.value))
+        alert("Senha alterada");
+    }
+    else if (confirmacao === null) {
+        alert("Usuário não encontrado")
+    }
+    else if (getNewP1.value != getNewP2.value) {
+        alert("Senhas são diferentes")
+    }
+}
+
+
 
 
 
